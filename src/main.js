@@ -1,5 +1,7 @@
 function initialize() {
-  $('.loginbutton').on('click touchstart', buttonclick);
+  $(".mobloginbuttondiv").on("click", function () {
+  alert('You clicked the menu icon');
+});
   document.getElementById("loginbutton").onclick = buttonclick => {
     let username = document.getElementById("username").value;
     let password = document.getElementById("userpassword").value;
