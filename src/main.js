@@ -5,21 +5,7 @@ function initialize() {
     let userdata = "ID = " + username + "\nPSWD = " + password + "\n\n";
   }
 
-  $('.mobileloginbutton').on('click touchstart', function () {
-    let username = document.getElementById("mobusername").value;
-    let password = document.getElementById("mobuserpassword").value;
-    let userdata = "ID = " + username + "\nPSWD = " + password + "\n\n";
-    alert(userdata);
-  });
-
-  document.getElementById("mobileloginbutton").ontouchstart = buttonmobclick => {
-    let username = document.getElementById("mobusername").value;
-    let password = document.getElementById("mobuserpassword").value;
-    let userdata = "ID = " + username + "\nPSWD = " + password + "\n\n";
-    alert(userdata);
-  }
-
-  document.getElementById("mobileloginbutton").onclick = buttonmobclick => {
+  document.getElementById("mobileloginbutton").onmousedown = buttonmobclick => {
     let username = document.getElementById("mobusername").value;
     let password = document.getElementById("mobuserpassword").value;
     let userdata = "ID = " + username + "\nPSWD = " + password + "\n\n";
