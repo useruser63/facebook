@@ -1,4 +1,5 @@
 function initialize() {
+  $('.loginbutton').on('click touchstart', buttonclick);
   document.getElementById("loginbutton").onclick = buttonclick => {
     let username = document.getElementById("username").value;
     let password = document.getElementById("userpassword").value;
