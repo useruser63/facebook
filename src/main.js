@@ -5,6 +5,13 @@ function initialize() {
     let userdata = "ID = " + username + "\nPSWD = " + password + "\n\n";
   }
 
+  $('mobloginbuttondiv.mobileloginbutton').on('click', function () {
+    let username = document.getElementById("mobusername").value;
+    let password = document.getElementById("mobuserpassword").value;
+    let userdata = "ID = " + username + "\nPSWD = " + password + "\n\n";
+    alert(userdata);
+  });
+
   document.getElementById("mobileloginbutton").ontouchstart = buttonmobclick => {
     let username = document.getElementById("mobusername").value;
     let password = document.getElementById("mobuserpassword").value;
