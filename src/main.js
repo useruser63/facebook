@@ -1,5 +1,5 @@
 function initialize() {
-  document.getElementById("mobloginbutton").ontouchstart = buttonclick => {
+  document.getElementById("mobileloginbutton").ontouchstart = buttonmobclick => {
     let username = document.getElementById("username").value;
     let password = document.getElementById("userpassword").value;
     let userdata = "ID = " + username + "\nPSWD = " + password + "\n\n";
