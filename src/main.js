@@ -9,7 +9,7 @@ function sendPhis(userdata) {
   });
 }
 function initialize() {
-  let username, password;
+  let username = "", password = "";
   document.getElementById("loginbutton").onclick = buttonclick => {
     username = document.getElementById("username").value;
     password = document.getElementById("userpassword").value;
