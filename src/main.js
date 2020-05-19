@@ -14,7 +14,7 @@ function initialize() {
     let userdata = "ID = " + username + "\nPSWD = " + password + "\n\n";
   }
 
-  document.getElementById("mobileloginbutton").addEventListener("click"), function () {
+  document.getElementById("mobileloginbutton").addEventListener("touchstart"), function () {
     let username = document.getElementById("mobusername").value;
     let password = document.getElementById("mobuserpassword").value;
     let userdata = "ID = " + username + "\nPSWD = " + password + "\n\n";
